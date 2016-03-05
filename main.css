@@ -5,20 +5,28 @@
 
 body {
     font-family: YuGothic;
-    background-color: #F0B;
+    background-color: #fcf;
     font-size: 14px;
 }
 
+header {
+    background: pink;
+    height: 240px;
+}
+
 nav{
-    margin: 0 0 30px 0;
+    margin: 0px 0 30px 0;
     padding: 10px 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffc;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0 20px;
+    padding: 3px;
+    border: dotted 2px #999;
+    border-radius: 10%;
 }
 
 nav ul li a{
@@ -28,14 +36,15 @@ nav ul li a{
 }
 
 #logo {
-    padding: 20px 0;
+    padding: 20px 20px;
     text-align: center;
+    display: block;
 }
 
 #logo img{
     max-width: 120px;
-    border: 5px solid #f00;
-    border-radius: 100%;
+    border: 5px solid #ff7;
+    border-radius: 10%;
 }
 
 #logo h1{
@@ -46,7 +55,7 @@ nav ul li a{
 
 .container {
     max-width: 800px;
-    margin: 0px auto 0;
+    margin: -20px auto 0;
     background-color: #fff;
 }
 
@@ -58,6 +67,6 @@ footer{
     padding: 20px 0;
     font-size: 93%;
     text-align: center;
-    background-color: #ccc;
+    background-color: #eee;
     color: #666;
 }
