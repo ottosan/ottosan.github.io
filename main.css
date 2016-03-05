@@ -14,27 +14,6 @@ header {
     height: 240px;
 }
 
-nav{
-    margin: 0px 0 30px 0;
-    padding: 10px 0;
-    text-align: center;
-    background-color: #ffc;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 3px;
-    border: dotted 2px #999;
-    border-radius: 10%;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #999;
-    font-weight: bold;
-}
-
 #logo {
     padding: 20px 20px;
     text-align: center;
@@ -54,13 +33,39 @@ nav ul li a{
 }
 
 .container {
-    max-width: 800px;
+    width: 80%;
     margin: -20px auto 0;
     background-color: #fff;
 }
 
-span.pink{
-    color: pink;
+nav{
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ffc;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+/*    padding: 3px;
+    border: dotted 2px #999;
+    border-radius: 10%;*/
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+}
+
+section{
+    margin: 40px;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #aaa;
+    margin: 0 -10px;
 }
 
 footer{
