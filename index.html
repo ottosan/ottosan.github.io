@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>ポートフォリオサイト</title>
-        <link rel="stylesheet" href="main.css" type="text/css" />
-        <link rel="short cut icon" href="images/profile.jpg">
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <p>
-                <img src="images/profile.jpg" alt="profile image" align="middle"/>
-                <font>Tomoe Otoishi</font>
-                </p>
-            </div><!--logo-->
-        </header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li class="hatena"><a href="http://ottosan84.hatenablog.com/" target="_blank">Hatena Blog</a></li>
-                    <li class="insta"><a href="https://www.instagram.com/tomoe_otoishi/" target="_blank">Instagram</a></li>
-                    <li class="git"><a href="https://github.com/ottosan" target="_blank">Github</a></li>
-                    <li class="twit"><a href="https://twitter.com/ottosan884" target="_blank">Twitter</a></li>
-                    <li class="fb"><a href="https://www.facebook.com/tomoe.otoishi" target="_blank">Facebook</a></li>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/index.css" rel="stylesheet">
+    <link rel="short cut icon" href="images/profile.jpg">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""><img src="images/icon.png" alt="icon" class="icon">Tomoe Otoishi</a>
+            </div>
+            <div class="collapse navbar-collapse target">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html" target="main">aboutMe</a></li>
+                    <li><a href="works.html" target="main">Works</a></li>
+                    <li><a href="skate.html" target="main">Skate</a></li>
                 </ul>
-            </nav>
-            <section>
-                <div class="topnavi">
-                    <div class="topnavicolum">
-                        <a href="works.html">
-                        <h2>Works</h2>
-                        <div><img src="images/pinkojo.jpg"></div>
-                        </a>
-                    </div>
-                    <div class="topnavicolum">
-                        <a href="skate.html">
-                        <h2>Figure Skate</h2>
-                        <div><img src="images/rainbowojo.jpg"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="profile">
-                <h3>Profile</h3>
-                    <p>音石 朋恵 1996年(平成8年)8月4日生まれ</p>
-                    <p>立命館大学情報理工学部メディア情報学科2回生</p>
-                    <p>立命館大学体育会スケート部フィギュア部門主務</p>
-                </div>
-                <!--
-                -->
-            </section>
-            <footer>
-                <p>&copy; 2016 Tomoe Otosihi</p>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <iframe src="home.html" name="main" scrolling="yes" frameborder="no">
+        </iframe>
+    </div>
+<footer class="footer">
+    <div class="row">
+        <a href="http://ottosan84.hatenablog.com/" target="_blank">Hatena Blog</a>
+        <a href="https://github.com/ottosan" target="_blank">Github</a>
+        <a href="https://twitter.com/ottosan884" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/tomoe.otoishi" target="_blank">Facebook</a>
+    </div>
+    <p class="text-muted">&copy; 2016 Tomoe Otosihi</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
