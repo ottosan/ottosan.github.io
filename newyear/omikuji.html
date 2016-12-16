@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>おみくじ</title>
+	<style>
+		body {
+			background: url("../images/omikujibg.jpg");
+			text-align: center;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+		h1{
+			color: #f44336;
+			font-size: 50px;
+		}
+		.result {
+			margin: 30px auto;
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			line-height: 180px;
+			font-size: 48px;
+			font-weight: bold;
+			background: #f44336;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+			color: #fff;
+		}
+
+		#btn{
+			margin: 0 auto;
+			width: 200px;
+			padding: 5px;
+			border-radius: 5px;
+			background: #00aaff;
+			box-shadow: 0 4px 0 #0088cc;
+			cursor: pointer;
+			color: #fff;
+		}
+		.result{
+			font-size: 20px;
+			margin: 20px;
+		}
+		#btn:hover{
+			opacity: 0.8;
+		}
+
+		#btn.pushed{
+			/*margin-top: 32px;*/
+			box-shadow: 0 2px 0 #0088cc;
+		}
+		.con{
+			display: inline-block;
+			color: #555;
+		}
+	</style>
+</head>
+<body>
+	<h1>おみくじ</h1>
+	<div class="con">運勢<div id="luck" class="result">？</div></div>
+	<div class="con">ラッキーアイテム<div id="item" class="result">？</div></div>
+	<div class="con">ラッキーカラー<div id="color" class="result">？</div></div>
+	<div id="btn">占う！</div>
+	<script>
+		(function(){
+			"use strict"
+			document.getElementById('btn').addEventListener('click', function(){
+				var luck = ['大吉', '中吉', '小吉', '吉', '凶', '大凶', '末吉', '大大吉', '大大凶'];
+				var item = ['ペン', 'ペット', '水筒', 'かばん', 'ローション', '電マ', '下ネタ', '筆', 'バナナ', 'ろうそく', 'ゴム', 'レポート', 'パソコン', 'AV', '車', 'ApplePen', 'スマホ', 'バイブ', '本'];
+				var result_1 = Math.floor(Math.random() * luck.length);
+				var result_2 = Math.floor(Math.random() * item.length);
+				var color = '#';
+				for(var i = 0; i < 3; i++){
+					color += Math.floor(Math.random() * 255).toString(16);
+				}
+				document.getElementById('luck').innerHTML = luck[result_1];
+				document.getElementById('item').innerHTML = item[result_2];
+				document.getElementById('color').innerHTML = color;
+				document.getElementById('color').style.backgroundColor = color; 
+			});
+			document.getElementById('btn').addEventListener('mousedown', function(){
+				this.className = 'pushed';
+			});
+			document.getElementById('btn').addEventListener('mouseup', function(){
+				this.className = '';
+			});
+		})();
+	</script>
+</body>
+</html>

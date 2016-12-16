@@ -1,0 +1,53 @@
+<style type="text/css">
+	body{
+		background-image: url("../images/newyearbg.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
+	h1{
+		text-align: center;
+		position: relative;
+		top: 35%;
+		color: #fff;
+		/*font-size: 40px;*/
+	}
+	#omikuji{
+		position: absolute;
+		top: 50%;
+		left: 35%;
+	}
+	#kakizome{
+		position: absolute;
+		top: 50%;
+		left: 55%;
+	}
+	#omikuji, #kakizome{
+		color: #fff;
+		text-decoration: none;
+		border: #fff solid 3px;
+		padding: 10px 20px;
+	}
+	#omikuji:hover, #kakizome:hover{
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	@media (max-width: 600px){
+		#omikuji{
+			position: absolute;
+			top: 50%;
+			left: 10%;
+		}
+		#kakizome{
+			position: absolute;
+			top: 50%;
+			left: 60%;
+		}
+	}
+
+</style>
+
+<h1>Happy New Year</h1>
+<a href="omikuji.html" id="omikuji">おみくじ</a>
+<a href="kakizome.html" id="kakizome">書き初め</a>
+
