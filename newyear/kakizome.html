@@ -4,11 +4,13 @@
 	<meta charset="utf-8">
 	<title>書き初め</title>
 	<style type="text/css">
+		body{
+			/*background-image: url(../images/kakizomebg.jpg);*/
+		}
 		#mycanvas{
 			border: 3px solid #2D3C6D;
 			/*カーソル筆にしたい*/
 			cursor: url('../images/hude.cur'), auto;
-			/*cursor: crosshair;*/
 		}
 		.thumbnail{
 			border: 2px solid #999;
@@ -80,10 +82,11 @@
 			e.preventDefault();
 			x = e.changedTouches[0].pageX - $(this).offset().left - borderWidth;
 			y = e.changedTouches[0].pageY - $(this).offset().top - borderWidth;
-			ctx.beginPath();
-			ctx.moveTo(startX, startY);
-			ctx.lineTo(x, y);
-			ctx.stroke();
+			// ctx.beginPath();
+			// ctx.moveTo(startX, startY);
+			// ctx.lineTo(x, y);
+			// ctx.stroke();
+			ctx.fillRect(startX, startY, penWidth, penWidth);
 			startX = x;
 			startY = y;
 		});
