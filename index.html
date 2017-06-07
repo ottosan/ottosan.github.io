@@ -28,16 +28,59 @@
             </div>
             <div class="collapse navbar-collapse target">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="about.html" target="main">aboutMe</a></li>
-                    <li><a href="works.html" target="main">Works</a></li>
-                    <li><a href="skate.html" target="main">Skate</a></li>
+                    <li><a href="about.html">aboutMe</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="skate.html">Skate</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <iframe src="home.html" name="main" scrolling="yes" frameborder="no">
-        </iframe>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><a href="about.html" target="main">
+      <img src="images/slide1.jpg" alt="slide1">
+      <div class="carousel-caption">
+        <h3>about me</h3>
+        <p>(Lake Biwa Canal in spring)</p>
+      </div></a>
+    </div>
+    <div class="item"><a href="works.html" target="main">
+      <img src="images/slide2.jpg" alt="slide2">
+      <div class="carousel-caption">
+        <h3>works</h3>
+        <p>(Lake Biwa)</p>
+      </div></a>
+    </div>
+    <div class="item"><a href="skate.html" target="main">
+      <img src="images/slide3.jpg" alt="slide3">
+      <div class="carousel-caption">
+        <h3>skate</h3>
+        <p>(Art Aquarium Exhibition in Osaka)</p>
+      </div></a>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
     </div>
 <footer class="footer">
     <div class="row">

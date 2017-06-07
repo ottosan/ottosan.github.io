@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8"/>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Works</title>
+    <title>Home Page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style/index.css" rel="stylesheet">
     <link rel="short cut icon" href="images/profile.jpg">
-</head>
-<body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="icon" class="icon">Tomoe Otoishi</a>
+            </div>
+            <div class="collapse navbar-collapse target">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html" >aboutMe</a></li>
+                    <li><a href="works.html" >Works</a></li>
+                    <li><a href="skate.html" >Skate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
 		<h2>Works</h2>
-		<div class="panel panel-default">
+		<div class="panel panel-warning">
 			<div class="panel-heading"><a href="https://safitem.herokuapp.com/" target="_blank">物資支援サービス「Safitem」</a></div>
 			<div class="panel-body">
 			<img src="images/safitem.png" alt="safitem image" width="100%" class="col-sm-5 img-thumbnail">
@@ -29,7 +55,7 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
+		<div class="panel panel-warning">
 			<div class="panel-heading"><a href="https://enjoysado.herokuapp.com/" target="_blank">記事投稿アプリ</a></div>
 			<div class="panel-body">
 			<img src="images/sado.png" alt="sado web app image" width="100%" class="col-sm-5 img-thumbnail">
@@ -44,7 +70,7 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
+		<div class="panel panel-warning">
 			<div class="panel-heading"><a href="https://store.line.me/stickershop/product/1326368/ja" target="_blank">LINEスタンプ「無気力にゃんこ」</a></div>
 			<div class="panel-body">
 			<img src="images/sticker.png" alt="line sticker image" width="100%" class="col-sm-5 img-thumbnail">
@@ -60,7 +86,7 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
+		<div class="panel panel-warning">
 			<div class="panel-heading">再翻訳アプリ</div>
 			<div class="panel-body">
 			<img src="images/retrans.jpg" alt="retranslate app image" width="100%" class="col-sm-5 img-thumbnail">
@@ -74,7 +100,7 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
+		<div class="panel panel-warning">
 			<div class="panel-heading"><a href="https://twitter.com/ottosan884_bot" target="_blank">Twitter Bot</a></div>
 			<div class="panel-body">
 			<img src="images/ojobot.png" alt="ojo bot image" width="100%" class="col-sm-5 img-thumbnail">
@@ -84,7 +110,7 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 				<div class="more-btn" id="more-ojobot-btn"><i class="glyphicon glyphicon-chevron-down"></i>more</div>
 				<div class="more" id="more-ojobot">
-					自動ツイートは1分〜1時間のランダムな時間間隔でつぶやきます．「お嬢」を含むツイートをいいねします．「#お嬢天気予報」でつぶやかれたツイートに天気予報を返します．「#お嬢の煽り」でつぶやかれたツイートに煽り画像を返します．「#お嬢診断」でつぶやかれたツイートにその人のツイート数といいね数から計算したツイッター依存度の診断結果を返します．これらの機能はお嬢botからフォローされると使うことができます．<br>
+					自動ツイートは1分〜1時間のランダムな時間間隔でつぶやきます．「お嬢」を含むツイートをいいねします．「#お嬢天気予報」でつぶやかれたツイートに天気予報を返します．「#お嬢の煽り」でつぶやかれたツイートに煽り画像を返します．「#お嬢診断」でつぶやかれたツイートにその人のツイート数といいね数から計算したツイッター依存度の診断結果を返します．これらの機能はお嬢botからフォローされると使うことができます．現在停止中<br>
 					<a href="http://ottosan84.hatenablog.com/entry/2016/02/07/164810" target="_blank"><span class="glyphicon glyphicon-link"></span> Rubyでツイートしてみた - IT omoe</a><br>
 					<a href="http://ottosan84.hatenablog.com/entry/2016/02/18/155142" target="_blank"><span class="glyphicon glyphicon-link"></span> RubyでTwitterのbot化，自動ふぁぼ，自動リプ - IT omoe</a><br>
 					<a href="http://ottosan84.hatenablog.com/entry/2016/02/26/005731" target="_blank"><span class="glyphicon glyphicon-link"></span> Rubyで天気予報の取得と画像のツイート - IT omoe</a><br>
@@ -96,22 +122,39 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$('#more-ojobot-btn').click(function(){
-					$('#more-ojobot').fadeIn();
+				$('#more-ojobot-btn').click(function() {
+					$(this).next().slideToggle();
+					$(this).toggleClass("active");
 				});
 				$('#more-retrans-btn').click(function(){
-					$('#more-retrans').fadeIn();
+					$(this).next().slideToggle();
+					$(this).toggleClass("active");
 				});
 				$('#more-sticker-btn').click(function(){
-					$('#more-sticker').fadeIn();
+					$(this).next().slideToggle();
+					$(this).toggleClass("active");
 				});
 				$('#more-safitem-btn').click(function(){
-					$('#more-safitem').fadeIn();
+					$(this).next().slideToggle();
+					$(this).toggleClass("active");
 				});
 				$('#more-sado-btn').click(function(){
-					$('#more-sado').fadeIn();
+					$(this).next().slideToggle();
+					$(this).toggleClass("active");
 				});
 			});
 		</script>
-</body>
+    </div>
+<footer class="footer">
+    <div class="row">
+        <a href="http://ottosan84.hatenablog.com/" target="_blank">Hatena Blog</a>
+        <a href="https://github.com/ottosan" target="_blank">Github</a>
+        <a href="https://twitter.com/ottosan884" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/tomoe.otoishi" target="_blank">Facebook</a>
+    </div>
+    <p class="text-muted">&copy; 2016 Tomoe Otosihi</p>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
